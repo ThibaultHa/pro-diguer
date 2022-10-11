@@ -25,8 +25,8 @@
 				<tbody>
 					<tr>
 						<td>Calvin D</td>
-						<td>CONTENT</td>
-						<td>...</td>
+						<td>CONTENT</td> <!-- Affiche 4 semaines utilisateur -->
+						<td>...</td> <!-- Affiche un état smile -->
 					</tr>
 				</tbody>
 			</table>

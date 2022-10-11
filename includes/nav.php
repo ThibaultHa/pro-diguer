@@ -8,5 +8,6 @@
 		<a href="signalement.php">Signalement</a>
 		<a href="confidentialite.php">Confidentialite</a>
 		<a href="synthese.php">Synthèse</a>
+		<a href="login.php">Déconnecter</a>
 	</div>
 </nav>

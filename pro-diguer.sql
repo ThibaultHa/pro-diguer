@@ -41,5 +41,5 @@ create table questionaire (
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	FOREIGN key (emoji1) REFERENCES emoji(emoid),
 	FOREIGN key (emoji2) REFERENCES emoji(emoid),
-	FOREIGN key (emoji3) REFERENCES emoji(emoid),
+	FOREIGN key (emoji3) REFERENCES emoji(emoid)
 );

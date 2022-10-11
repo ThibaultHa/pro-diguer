@@ -1,19 +1,19 @@
 CREATE TABLE profil (
-	iduser int not null autoincrement,
+	iduser int not null auto_increment,
 	prenom VARCHAR,
 	nom VARCHAR,
 	mail VARCHAR,
 	sexe BOOLEAN,
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
-	passord VARCHAR
-	PRIMARY KEY iduser
+	passord VARCHAR,
+	PRIMARY KEY (iduser)
 );
 CREATE TABLE  signalement (
-	signal_id int not null autoincrement,
+	signal_id int not null auto_increment,
 	userid FOREIGN KEY,
 	commentaire VARCHAR,
-	PRIMARY KEY signal_id
+	PRIMARY KEY (signal_id)
 	);
 	
 CREATE TABLE indice (
@@ -25,14 +25,14 @@ CREATE TABLE indice (
 );
 
 CREATE TABLE emoji (
-	emoid int not NULL autoincrement,
+	emoid int not NULL auto_increment,
 	emoname varCHAR,
 	emoval varCHAR,
-	PRIMARY key emoid
+	PRIMARY key (emoid)
 );
 
 create table questionaire (
-	questionnaireid int NOT NULL autoincrement,
+	questionnaireid int NOT NULL auto_increment,
 	userid int,
 	emoji1 int,
 	emoji2 int,
@@ -41,5 +41,5 @@ create table questionaire (
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	FOREIGN key (emoji1) REFERENCES emoji(emoid),
 	FOREIGN key (emoji2) REFERENCES emoji(emoid),
-	FOREIGN key (emoji3) REFERENCES emoji(emoid),
+	FOREIGN key (emoji3) REFERENCES emoji(emoid)
 );

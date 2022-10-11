@@ -1,4 +1,4 @@
-CREATE TABLE USER (
+CREATE TABLE profil (
 	iduser int not null autoincrement,
 	prenom VARCHAR,
 	nom VARCHAR,
@@ -20,7 +20,7 @@ CREATE TABLE indice (
 	userid int,
 	indice INT,
 	signalement.id int,
-	FOREIGN KEY (userid) REFERENCES USER(iduser),
+	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	FOREIGN KEY (signalement.id) REFERENCES signalement(signal_id)
 );
 
@@ -38,7 +38,7 @@ create table questionaire (
 	emoji2 int,
 	emoji3 int,
 	questionaire_date DATE,
-	FOREIGN KEY (userid) REFERENCES USER(iduser),
+	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	FOREIGN key (emoji1) REFERENCES emoji(emoid),
 	FOREIGN key (emoji2) REFERENCES emoji(emoid),
 	FOREIGN key (emoji3) REFERENCES emoji(emoid),

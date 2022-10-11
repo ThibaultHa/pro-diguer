@@ -15,7 +15,7 @@
 	
 	<section>
 		<article>
-			
+			<?php include 'includes/tableauQ.php';?>
 		</article>
 	</section>
 	<footer>

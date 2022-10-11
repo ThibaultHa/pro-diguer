@@ -16,9 +16,19 @@
     ?>
 	
 	<section>
-		<article>
-			<p>Mon humeur : <a href="questionnaire.php">Questionnaire</a></p>
-		</article>
+		<!-- 2 situations : l'utilisateur doit compléter son formulaire ou n'a rien à faire -->
+		<!-- Doit compléter son formulaire -->
+		<?php
+			$check = true;
+			if($check) // Doit compléter son formulaire
+			{
+				include 'includes/verrouProfil.php';
+			}
+			else // Tout est ok
+			{
+				include 'includes/pageProfil.php';
+			}
+		?>
 	</section>
 	<footer>
 		

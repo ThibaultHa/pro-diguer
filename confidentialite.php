@@ -12,15 +12,9 @@
 </header>
 <!-- Menu -->
 <?php include 'includes/nav.php';
-<<<<<<< HEAD
 $conn = include 'includes/BDDConnexion.php';
 $sql = "SELECT share_coach FROM user WHERE user.id = " . $_SESSION['userId'];
 $result = $conn->query($sql);
-=======
-//$conn = include 'includes/BDDConnexion.php';
-//$sql = "SELECT share_coach FROM user WHERE user.id = ".$_SESSION['userId'];
-//$result = $conn->query($sql);
->>>>>>> a8320aa5e429f44ab886c92fc662e1a33d56673c
 ?>
 <section>
     <article>

@@ -5,31 +5,16 @@ margin: 0px;
 
 nav {
 background-color: #999999;
-position: absolute;
-top: 0px;
-left: 0px;
-width: 15%;
-height: 100%;
 }
 
 header {
 background-color: #AAAAAA;
-position: absolute;
-left: 15%;
-top: 0px;
-width: 85%;
-height: 6%;
 }
 
 
 
 section {
 background-color: #BBBBBB;
-position: absolute;
-left: 15%;
-top: 6%;
-width: 85%;
-height: 94%;
 }
 
 table{

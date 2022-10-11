@@ -9,13 +9,15 @@ include 'traitement/userbdd.php';
   <title>Profil</title>
   <link rel="icon" type="image/png" href="img/logo.png" />
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- Menu -->
+	<?php include 'includes/nav.php';?>
+
 	<header>
 		<p>Mon profil</p>
 	</header>
-	<!-- Menu -->
-	<?php include 'includes/nav.php';
     ?>
 	
 	<section>

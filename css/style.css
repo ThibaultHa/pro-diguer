@@ -1,0 +1,44 @@
+.menu-principal{
+    background-color:black;
+    padding:10px;
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+.logo-appli{
+    width:25%;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    border:1px solid white;
+    border-radius: 50px;
+}
+.menu-appli{
+    display:flex;
+    padding-left:20px;
+    padding-right:100px;
+    width:75%;
+}
+.menu-appli a{
+    width:20%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:1px solid #FF7D28;
+    border-radius: 10px;
+    background-color:white;
+    color:#FF7D28;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+    margin-left:20px;
+}
+.menu-appli a:hover{
+    border:1px solid #FF7D28;
+    border-radius: 10px;
+    background-color:#FF7D28;
+    color:white;
+}

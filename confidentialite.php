@@ -25,7 +25,11 @@ include 'traitement/userbdd.php';
     <article>
         <form>
             <p>
-                <input type="checkbox" id="shareData" name="shareData">
+                <?php if (isset($result)) {
+                    if ($result == true) echo '<input type="checkbox" id="shareData" name="shareData" checked>';
+                    else echo '<input type="checkbox" id="shareData" name="shareData">';
+                    }
+                ?>
                 <label for="shareData">J'autorise à partager mes données avec mon coach carrière</label>
             </p>
         </form>

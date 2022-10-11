@@ -1,5 +1,5 @@
 CREATE TABLE profil (
-	iduser int not null autoincrement,
+	iduser int not null auto_increment,
 	prenom VARCHAR,
 	nom VARCHAR,
 	mail VARCHAR,
@@ -10,7 +10,7 @@ CREATE TABLE profil (
 	PRIMARY KEY iduser
 );
 CREATE TABLE  signalement (
-	signal_id int not null autoincrement,
+	signal_id int not null auto_increment,
 	userid FOREIGN KEY,
 	commentaire VARCHAR,
 	PRIMARY KEY signal_id
@@ -25,14 +25,14 @@ CREATE TABLE indice (
 );
 
 CREATE TABLE emoji (
-	emoid int not NULL autoincrement,
+	emoid int not NULL auto_increment,
 	emoname varCHAR,
 	emoval varCHAR,
 	PRIMARY key emoid
 );
 
 create table questionaire (
-	questionnaireid int NOT NULL autoincrement,
+	questionnaireid int NOT NULL auto_increment,
 	userid int,
 	emoji1 int,
 	emoji2 int,

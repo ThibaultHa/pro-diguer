@@ -6,4 +6,6 @@
 	<p><a href="signalement.php">Signalement</a></p>
 	<p><a href="confidentialite.php">Confidentialite</a></p>
 	<p><a href="synthese.php">Synthèse</a></p>
+	<br>
+	<p><a href="login.php">Déconnecter</a></p>
 </nav>

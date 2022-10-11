@@ -14,7 +14,22 @@
 	<?php include 'includes/nav.php';?>
 	<section>
 		<article>
-			<p>abc :</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Prénom Nom</th>
+						<th>Suivit Hebdo</th>
+						<th>Tendence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Calvin D</td>
+						<td>CONTENT</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 	</section>
 	<footer>

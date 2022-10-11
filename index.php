@@ -14,8 +14,6 @@
 	<header>
 		<p>Mon profil</p>
 	</header>
-	<!-- Menu -->
-	<?php include 'includes/nav.php';
     session_start();
     ?>
 	

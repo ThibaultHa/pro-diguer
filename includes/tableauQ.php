@@ -8,7 +8,7 @@
 			for($colonne = 1; $colonne <= 7; $colonne++)
 			{
 				echo "<td>";
-				echo "<img class='img_emotion' src='img/emotion/" . $i . ".png'>";
+				echo "<input type='checkbox' id='emotion_" . $i . "'> <img class='img_emotion' src='img/emotion/" . $i . ".png'>";
 				echo "</td>";
 				$i++;	
 			}

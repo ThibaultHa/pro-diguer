@@ -8,7 +8,7 @@
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="verification.php" method="POST">
+            <form action="index.php" method="POST"> <!-- a changer par verification.php après -->
                 <h1>Connexion</h1>
                 
                 <label><b> Nom </b></label>

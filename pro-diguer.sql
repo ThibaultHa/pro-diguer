@@ -7,13 +7,13 @@ CREATE TABLE profil (
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
 	passord VARCHAR,
-	PRIMARY KEY iduser
+	PRIMARY KEY (iduser)
 );
 CREATE TABLE  signalement (
 	signal_id int not null auto_increment,
 	userid FOREIGN KEY,
 	commentaire VARCHAR,
-	PRIMARY KEY signal_id
+	PRIMARY KEY (signal_id)
 	);
 	
 CREATE TABLE indice (
@@ -28,7 +28,7 @@ CREATE TABLE emoji (
 	emoid int not NULL auto_increment,
 	emoname varCHAR,
 	emoval varCHAR,
-	PRIMARY key emoid
+	PRIMARY key (emoid)
 );
 
 create table questionaire (

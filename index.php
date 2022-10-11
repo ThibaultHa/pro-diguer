@@ -11,7 +11,9 @@
 		<p>Mon profil</p>
 	</header>
 	<!-- Menu -->
-	<?php include 'includes/nav.php';?>
+	<?php include 'includes/nav.php';
+    session_start();
+    ?>
 	
 	<section>
 		<article>

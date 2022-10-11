@@ -1,3 +1,7 @@
+<?php 
+include 'includes/BDDConnexion.php';
+include 'traitement/userbdd.php';
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -12,9 +16,10 @@
 </header>
 <!-- Menu -->
 <?php include 'includes/nav.php';
-//$conn = include 'includes/BDDConnexion.php';
+
 //$sql = "SELECT share_coach FROM user WHERE user.id = ".$_SESSION['userId'];
 //$result = $conn->query($sql);
+
 ?>
 <section>
     <article>

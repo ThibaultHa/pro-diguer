@@ -1,3 +1,7 @@
+<?php 
+include 'includes/BDDConnexion.php';
+include 'traitement/userbdd.php';
+?>
 <!doctype html>
 <html lang="fr">
 <head>

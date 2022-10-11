@@ -6,7 +6,7 @@ CREATE TABLE profil (
 	sexe BOOLEAN,
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
-	passord VARCHAR
+	passord VARCHAR,
 	PRIMARY KEY iduser
 );
 CREATE TABLE  signalement (

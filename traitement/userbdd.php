@@ -1,6 +1,7 @@
 <?php
 // Récupère l'utilisateur en bdd et le stock dans des variables de session
-$bdd = $db->prepare('SELECT * FROM user WHERE user.id = :id');
+$_SESSION['iduser'] = 1;
+$bdd = $db->prepare('SELECT * FROM profil WHERE profil.iduser = :id');
 $bdd->execute(['id' => $_SESSION['iduser']]);
 $results = $bdd->fetchAll();
 

@@ -7,7 +7,8 @@ CREATE TABLE profil (
 	sexe BOOLEAN,
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
-	passord VARCHAR(50)
+	statut VARCHAR(30),
+	password VARCHAR(2000)
 );
 CREATE TABLE  signalement
 (

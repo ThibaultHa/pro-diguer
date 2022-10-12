@@ -2,9 +2,9 @@
 session_start();
 
 $username = 'root';
-$password = '';
+$password = 'root';
 $host = 'localhost';
-$db = 'pro-diguer';
+$db = 'ahahah';
 
 $_SESSION['userId'] = 1;
 

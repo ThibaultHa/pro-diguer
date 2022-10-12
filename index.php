@@ -18,7 +18,7 @@ include 'traitement/userbdd.php';
 	<header>
 		<p>Mon profil</p>
 	</header>
-    ?>
+    
 	
 	<section>
 		<!-- 2 situations : l'utilisateur doit compléter son formulaire ou n'a rien à faire -->

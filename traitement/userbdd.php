@@ -6,5 +6,5 @@ $results = $bdd->fetchAll();
 
 $_SESSION['nom'] = $results[0]['nom'];
 $_SESSION['prenom'] = $results[0]['prenom'];
-
+$_SESSION['statut'] = $results[0]['statut'];
 ?>

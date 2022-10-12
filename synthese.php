@@ -15,7 +15,7 @@ include 'traitement/userbdd.php';
 	<!-- Menu -->
 	<?php include 'includes/nav.php';?>
 	<section>
-		<article>
+		<article class="page-content page-confidentialite">
 			<table>
 				<thead>
 					<tr>
@@ -34,7 +34,7 @@ include 'traitement/userbdd.php';
 			</table>
 		</article>
 	</section>
-	<footer>
+	<footer class="page-content">
 		<p>Pied de page qui sert vraiment à rien pour le coup..</p>
 	</footer>
 </body>

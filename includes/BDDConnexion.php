@@ -2,7 +2,7 @@
 session_start();
 
 $username = 'root';
-$password = 'root';
+$password = '';
 $host = 'localhost';
 $base = 'pro-diguer';
 

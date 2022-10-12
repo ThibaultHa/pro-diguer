@@ -20,7 +20,7 @@ include 'traitement/userbdd.php';
 
 ?>
 <section>
-    <article>
+    <article class="page-content">
         <form>
             <p>
                 <?php
@@ -36,7 +36,7 @@ include 'traitement/userbdd.php';
         </form>
     </article>
 </section>
-<footer>
+<footer class="page-content">
     <p>Pied de page qui sert vraiment à rien pour le coup..</p>
 </footer>
 </body>

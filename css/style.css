@@ -1,3 +1,6 @@
+body{
+    background-color:white;
+}
 .menu-principal{
     background-color:black;
     padding:10px;
@@ -41,4 +44,70 @@
     border-radius: 10px;
     background-color:#FF7D28;
     color:white;
+}
+.page-content{
+    padding:0 100px;
+    margin-top:30px;
+    background-color:white;
+}
+.page-content p{
+    font-size: 1.2em;
+}
+.page-content a{
+    background-color:black;
+    color:white;
+    border:1px solid black;
+    padding:10px 20px;
+    border-radius:20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.page-content a:hover{
+    background-color:white;
+    color:black;
+    border:1px solid black;
+}
+fieldset legend{
+    font-size: 1.5em;
+    color:#FF7D28;
+    font-weight: bold;
+    font-style:italic;
+}
+fieldset table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+fieldset button{
+    background-color:#FF7D28;
+    color:white;
+    border:1px solid #FF7D28;
+    padding:15px 30px;
+    font-size: 1.6em;
+    border-radius:30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+fieldset button:hover{
+    background-color: white;
+    color:#FF7D28;
+}
+fieldset table td:hover{
+    background-color:black;
+}
+fieldset table td input{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+.page-confidentialite table{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
 }

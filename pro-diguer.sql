@@ -8,7 +8,7 @@ CREATE TABLE profil (
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
 	passord VARCHAR(50)
-)
+);
 CREATE TABLE  signalement
 (
 	userid int ,
@@ -16,7 +16,7 @@ CREATE TABLE  signalement
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	commentaire VARCHAR(200)
 
-)
+);
 
 
 CREATE TABLE indice 
@@ -26,7 +26,7 @@ CREATE TABLE indice
 	signalement_id int,
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	FOREIGN KEY (signalement_id) REFERENCES signalement(signal_id)
-)
+);
 
 CREATE TABLE emoji 
 (
@@ -34,7 +34,7 @@ CREATE TABLE emoji
 	emoname varCHAR (20),
 	emoval int not null
 
-)
+);
 
 create table questionaire 
 (

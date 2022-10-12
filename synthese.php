@@ -24,18 +24,72 @@ include 'traitement/userbdd.php';
 						<th>Tendence</th>
 					</tr>
 				</thead>
+				<?php
+				// Récpération des données utilisateurs nécessaires pour afficher le tableau
+				$bdd = $db->prepare('SELECT * FROM profil');
+				$bdd->execute();
+				$userResults = $bdd->fetchAll();
+				
+				?>
 				<tbody>
-					<tr>
-						<td>Calvin D</td>
-						<td>CONTENT</td> <!-- Affiche 4 semaines utilisateur -->
-						<td>...</td> <!-- Affiche un état smile -->
-					</tr>
+				<?php
+					foreach ($userResults as $userResult) 
+					{
+						// On récupère les 4 derniers formulaires complété par l'utilisateur
+						$bdd = $db->prepare('SELECT * FROM questionaire WHERE userid = :userid ORDER BY questionnaire_id DESC LIMIT 4');
+						$bdd->execute(['userid' => $userResult['iduser']]);
+						$qResults = $bdd->fetchAll();
+						// Impression html
+						echo '<tr>';
+							// Nom prénom
+							echo '<td>' . $userResult['prenom'] . ' ' . $userResult['nom'] . '</td>';
+							// synthèse mensuel
+							echo '<td>';
+								if($userResult['SHARE_coach']) // La communication au manager est autorisé
+								{
+									if(isset($qResults)) // Affichage des résultats
+									{
+										echo '<table>';
+										foreach ($qResults as $qResult) 
+										{
+											echo '<tr>';
+											echo '<td>';
+											echo "<img class='img_emotion' src='img/emotion/" . $qResult['emoji1'] . ".png'>";
+											echo '</td>';
+											echo '<td>';
+											echo "<img class='img_emotion' src='img/emotion/" . $qResult['emoji2'] . ".png'>";
+											echo '</td>';
+											echo '<td>';
+											echo "<img class='img_emotion' src='img/emotion/" . $qResult['emoji3'] . ".png'>";
+											echo '</td>';
+											echo '</tr>';
+										}
+										echo '</table>';
+									}
+									else // Résultat inexistant
+									{
+										echo 'Aucune information disponible';
+									}
+								}
+								else // elle n'est pas autorisé.
+								{
+									echo 'Information non partagé';
+								}
+							echo '</td>'; 
+							// IA calcul
+							echo '<td>...</td>'; 
+						echo '</tr>';
+					}
+				?>
 				</tbody>
 			</table>
 		</article>
 	</section>
+<<<<<<< HEAD
 	<footer class="page-content">
 		<p>Pied de page qui sert vraiment à rien pour le coup..</p>
 	</footer>
+=======
+>>>>>>> 6b5fb750cf30fd782f1b523217090ed8e439bf78
 </body>
 </html>

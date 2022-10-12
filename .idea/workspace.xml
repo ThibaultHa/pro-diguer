@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1584d3ed-fde6-49e5-a018-c7597358ee0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confidentialite.php" beforeDir="false" afterPath="$PROJECT_DIR$/confidentialite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/BDDConnexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/BDDConnexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro-diguer.sql" beforeDir="false" afterPath="$PROJECT_DIR$/pro-diguer.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitement/userbdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitement/userbdd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signalement.php" beforeDir="false" afterPath="$PROJECT_DIR$/signalement.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,5 +53,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

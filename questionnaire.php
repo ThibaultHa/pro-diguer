@@ -17,6 +17,7 @@ include 'traitement/userbdd.php';
 	
 	<section>
 		<article class="page-content">
+<<<<<<< HEAD
 			<form method="GET" id="questionnaire_form"></form>
 			<fieldset>
 				<legend>Choisi 3 émotions représentant ta semaine :</legend>
@@ -24,6 +25,15 @@ include 'traitement/userbdd.php';
 				<button type="submit">Valider !</button>
 			</fieldset>
 			
+=======
+			<form action="traitement/sendForm.php" method="POST" id="questionnaire_form">
+				<fieldset>
+					<legend>Choisi 3 émotions représentant ta semaine :</legend>
+					<?php include 'includes/tableauQ.php';?>
+					<button type="submit">Valider !</button>
+				</fieldset>
+			</form>
+>>>>>>> 6b5fb750cf30fd782f1b523217090ed8e439bf78
 		</article>
 	</section>
 	<footer>

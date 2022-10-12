@@ -108,5 +108,11 @@ include 'traitement/userbdd.php';
 			</table>
 		</article>
 	</section>
+<<<<<<< HEAD
+	<footer class="page-content">
+		<p>Pied de page qui sert vraiment à rien pour le coup..</p>
+	</footer>
+=======
+>>>>>>> 6b5fb750cf30fd782f1b523217090ed8e439bf78
 </body>
 </html>

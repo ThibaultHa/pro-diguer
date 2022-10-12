@@ -12,6 +12,18 @@ include 'traitement/userbdd.php';
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
+	<!-- Menu -->
+	<?php include 'includes/nav.php';?>
+	<section>
+		<article  class="page-content">
+			<p>Avis :</p>
+		</article>
+	</section>
+	<footer class="page-content">
+		<p>Pied de page qui sert vraiment à rien pour le coup..</p>
+	</footer>
+=======
 <!-- Menu -->
 <?php include 'includes/nav.php'; ?>
 <section>
@@ -51,5 +63,6 @@ include 'traitement/userbdd.php';
         </form>
     </article>
 </section>
+>>>>>>> 6b5fb750cf30fd782f1b523217090ed8e439bf78
 </body>
 </html>

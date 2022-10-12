@@ -9,11 +9,9 @@ include 'traitement/userbdd.php';
     <title>Confidentialité</title>
     <link rel="icon" type="image/png" href="img/logo.png"/>
     <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <p>Gestion de la confidentialité</p>
-</header>
 <!-- Menu -->
 <?php include 'includes/nav.php';
 

@@ -17,13 +17,13 @@ include 'traitement/userbdd.php';
 	
 	<section>
 		<article class="page-content">
-			<form method="GET" id="questionnaire_form"></form>
-			<fieldset>
-				<legend>Choisi 3 émotions représentant ta semaine :</legend>
-				<?php include 'includes/tableauQ.php';?>
-				<button type="submit">Valider !</button>
-			</fieldset>
-			
+			<form action="traitement/sendForm.php" method="POST" id="questionnaire_form">
+				<fieldset>
+					<legend>Choisi 3 émotions représentant ta semaine :</legend>
+					<?php include 'includes/tableauQ.php';?>
+					<button type="submit">Valider !</button>
+				</fieldset>
+			</form>
 		</article>
 	</section>
 	<footer>

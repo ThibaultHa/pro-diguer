@@ -20,7 +20,7 @@ include 'traitement/userbdd.php';
 
 ?>
 <section>
-    <article>
+    <article class="page-content">
         <form>
             <p>
                 <?php
@@ -32,7 +32,7 @@ include 'traitement/userbdd.php';
 				$result = $bdd->fetch();
                 if (isset($result)) 
 				{
-                    if ($result) 
+                    if ($result[0]) 
 						echo '<input type="checkbox" id="shareData" name="shareData" checked>';
                     else 
 						echo '<input type="checkbox" id="shareData" name="shareData">';
@@ -43,8 +43,5 @@ include 'traitement/userbdd.php';
         </form>
     </article>
 </section>
-<footer>
-    <p>Pied de page qui sert vraiment à rien pour le coup..</p>
-</footer>
 </body>
 </html>

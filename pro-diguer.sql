@@ -51,3 +51,33 @@ create table questionaire
 	FOREIGN key (emoji3) REFERENCES emoji(emoid)
 
 )
+
+
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (1, 'Anxieux', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (2, 'Miserable', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (3, 'Nerveux', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (4, 'Ennuyé', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (5, 'Content', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (6, 'Surprit', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (7, 'Peur', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (8, 'Triste', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (9, 'Donfus', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (10, 'Septique', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (11, 'Incertain', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (12, 'Encouragé', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (13, 'Hésitant', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (14, 'Perplexe', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (15, 'Stupfait', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (16, 'Heureux', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (17, 'Pessimiste', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (18, 'Contrarié', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (19, 'Enchanté', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (20, 'Interessé', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (21, 'Coléreux', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (22, 'Effrayé', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (23, 'Jayful', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (24, 'Tendu', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (25, 'Timide', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (26, 'Amoureux', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (27, 'Agacé', 0);
+INSERT INTO emoji (emoid, emoname, emoval) VALUES (28, 'Curieux', 0);

@@ -15,12 +15,9 @@ include 'traitement/userbdd.php';
 	<!-- Menu -->
 	<?php include 'includes/nav.php';?>
 	<section>
-		<article>
+		<article class="page-content">
 			<p>Avis :</p>
 		</article>
 	</section>
-	<footer>
-		<p>Pied de page qui sert vraiment à rien pour le coup..</p>
-	</footer>
 </body>
 </html>

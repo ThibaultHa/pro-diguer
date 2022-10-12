@@ -1,5 +1,7 @@
 <?php
-    $_SESSION['iduser'] = null;
+    session_start();
+    $_SESSION = array();
+    session_destroy();
     header("Location: ./login.php",true);
-//var_dump($_SESSION['iduser']);
     die();
+

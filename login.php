@@ -8,6 +8,8 @@
     <?php
     include 'includes/BDDConnexion.php';
     if(isset($_SESSION['iduser'])){
+        var_dump($_SESSION['iduser']);
+        die();
         header("Location: ./index.php",true);
         die();
     }

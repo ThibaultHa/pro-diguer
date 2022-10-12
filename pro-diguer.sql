@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-CREATE TABLE profil 
-(
-	iduser int PRIMARY KEY not null auto_increment,
-=======
+
 CREATE TABLE profil (
 	iduser int PRIMARY KEY auto_increment not null,
->>>>>>> e41df218125f5be4ef032c7d4ccfedad267c2b2c
-	prenom VARCHAR,
-	nom VARCHAR,
-	mail VARCHAR,
+	prenom VARCHAR(30),
+	nom VARCHAR(30),
+	mail VARCHAR(50),
 	sexe BOOLEAN,
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
-<<<<<<< HEAD
-	passord VARCHAR
+	passord VARCHAR(50)
 )
 CREATE TABLE  signalement
 (
@@ -23,17 +17,8 @@ CREATE TABLE  signalement
 	commentaire VARCHAR(200)
 
 )
-=======
-	password VARCHAR
-);
-CREATE TABLE  signalement (
-	signal_id int not null auto_increment,
-	userid FOREIGN KEY,
-	commentaire VARCHAR,
-	PRIMARY KEY (signal_id)
-	);
->>>>>>> e41df218125f5be4ef032c7d4ccfedad267c2b2c
-	
+
+
 CREATE TABLE indice 
 (
 	userid int,

@@ -1,5 +1,9 @@
-<?php 
+<?php
 include 'includes/BDDConnexion.php';
+if(!isset($_SESSION['iduser'])){
+    header("Location: ./login.php",true);
+    die();
+}
 include 'traitement/userbdd.php';
 ?>
 <!doctype html>
@@ -13,7 +17,10 @@ include 'traitement/userbdd.php';
 </head>
 <body>
 	<!-- Menu -->
-	<?php include 'includes/nav.php';?>
+	<?php
+    include 'includes/nav.php';
+    ?>
+
     
 	
 	<section>

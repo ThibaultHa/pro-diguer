@@ -13,10 +13,13 @@ CREATE TABLE profil (
 CREATE TABLE  signalement
 (
 	userid int ,
+	signal_userid int,
 	signal_id int PRIMARY KEY not null auto_increment,
+	emoji int,
+    commentaire VARCHAR(2000),
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
-	commentaire VARCHAR(200)
-
+    FOREIGN KEY (signal_userid) REFERENCES profil(iduser),
+    FOREIGN key (emoji) REFERENCES emoji(emoid)
 );
 
 

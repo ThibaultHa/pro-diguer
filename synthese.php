@@ -77,7 +77,30 @@ include 'traitement/userbdd.php';
 								}
 							echo '</td>'; 
 							// IA calcul
-							echo '<td>...</td>'; 
+							echo '<td>';
+								// On récupère les smiley 
+								$bdd = $db->prepare('SELECT * FROM emoji');
+								$bdd->execute();
+								$emojiResults = $bdd->fetchAll();
+								// Calcul du score
+								if(isset($emojiResults) and $userResult['SHARE_coach'])
+								{
+									$baseScore = 100;
+									$emojiScore = 0;
+									foreach ($qResults as $qResult) 
+									{
+										$emojiScore += $emojiResults[intval($qResult['emoji1'])-1]['emoval'] + $emojiResults[intval($qResult['emoji2'])-1]['emoval'] + $emojiResults[intval($qResult['emoji3'])-1]['emoval'];
+									}
+									
+									$totalScore = $baseScore + $emojiScore;
+									
+									echo $totalScore;
+								}
+								else
+								{
+									// rien
+								}
+							echo '</td>'; 
 						echo '</tr>';
 					}
 				?>

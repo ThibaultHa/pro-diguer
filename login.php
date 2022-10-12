@@ -25,7 +25,15 @@
                     if($err==1 || $err==2)
                         echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }
-                if(isset($_POST['submit']))
+                if(isset($_POST['submit'])){
+                    $sql = 'SELECT password FROM profil WHERE mail = '.$_POST['username'];
+                    $mdp = $db->query($sql);
+                    if(isset($mdp) && (crypt($_POST['password'],CRYPT_SHA512) == $mdp)) {
+                        $sql =  $sql = 'SELECT iduser FROM profil WHERE mail = '.$_POST['username'];
+                        $_SESSION['iduser'] =  $db->query($sql);
+                    }
+                    else echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                }
                 ?>
             </form>
         </div>

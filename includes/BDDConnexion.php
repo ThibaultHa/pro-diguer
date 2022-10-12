@@ -2,11 +2,11 @@
 session_start();
 
 $username = 'root';
-$password = '';
+$password = 'root';
 $host = 'localhost';
 $base = 'pro-diguer';
 
-$_SESSION['userId'] = 1;
+$_SESSION['iduser'] = 1;
 
 //On établit la connexion
 //$conn = new mysqli($servername, $username, $password);

@@ -6,7 +6,7 @@ CREATE TABLE profil (
 	sexe BOOLEAN,
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
-	passord VARCHAR
+	password VARCHAR
 );
 CREATE TABLE  signalement (
 	signal_id int not null auto_increment,

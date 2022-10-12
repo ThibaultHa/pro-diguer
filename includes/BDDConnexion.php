@@ -2,7 +2,9 @@
 session_start();
 
 $username = 'root';
-$password = 'root';
+$password = '';
+$host = 'localhost';
+$db = 'pro-diguer';
 
 $_SESSION['userId'] = 1;
 
@@ -11,7 +13,7 @@ $_SESSION['userId'] = 1;
 try
 {
 	// On se connecte à MySQL
-	$db = new PDO('mysql:host=localhost;dbname=ahahah;charset=utf8', $username, $password);
+	$db = new PDO('mysql:host='.$host.';dbname='.$db.';charset=utf8', $username, $password);
 }
 catch(Exception $e)
 {

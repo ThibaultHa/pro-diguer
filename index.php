@@ -1,7 +1,5 @@
 <?php
 include 'includes/BDDConnexion.php';
-var_dump($_SESSION['iduser']);
-var_dump(!isset($_SESSION['iduser']));
 if(!isset($_SESSION['iduser'])){
     header("Location: ./login.php",true);
     die();

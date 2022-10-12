@@ -51,11 +51,11 @@ create table questionaire
 	FOREIGN key (emoji3) REFERENCES emoji(emoid)
 
 );
-INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (1, 'Calvin', 'Djafari', 'c.djafari@epsi.fr', true, null, false, 'epsi', 'coath');
-INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (2, 'Thibault', 'Hallard', 't.Hallard@epsi.fr', true, null, false, 'epsi', 'membre');
-INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (3, 'Jules', 'Ravinet', 'j.Ravinet@epsi.fr', true, null, false, 'epsi', 'membre');
-INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (4, 'Mathis', 'Crinchon', 'm.Crinchon@epsi.fr', true, null, false, 'epsi', 'membre');
-INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (5, 'Mahrez', 'Saidi', 'm.saidi@epsi.fr', true, null, false, 'epsi', 'membre');
+INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (1, 'Calvin', 'Djafari', 'c.djafari@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'coath');
+INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (2, 'Thibault', 'Hallard', 't.Hallard@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'membre');
+INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (3, 'Jules', 'Ravinet', 'j.Ravinet@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'membre');
+INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (4, 'Mathis', 'Crinchon', 'm.Crinchon@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'membre');
+INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (5, 'Mahrez', 'Saidi', 'm.saidi@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'membre');
 
 INSERT INTO emoji (emoid, emoname, emoval) VALUES (1, 'Anxieux', 0);
 INSERT INTO emoji (emoid, emoname, emoval) VALUES (2, 'Miserable', 0);

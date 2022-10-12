@@ -7,7 +7,10 @@
 	<a href="index.php">Profil</a>
 	<a href="signalement.php">Signalement</a>
 	<a href="confidentialite.php">Confidentialite</a>
-	<a href="synthese.php">Synthèse</a>
+	<?php
+		if($_SESSION['statut'] == 'coath')
+			echo '<a href="synthese.php">Synthèse</a>';
+	?>
 	<a href="logout.php">Déconnecter</a>
 	</div>
 </nav>

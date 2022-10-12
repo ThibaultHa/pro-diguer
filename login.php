@@ -18,7 +18,7 @@
             <form action="login.php" method="POST"> <!-- a changer par verification.php après -->
                 <h1>Connexion</h1>
                 
-                <label><b> Nom </b></label>
+                <label><b> Email </b></label>
                 <input type="text" placeholder="Email" name="username" required>
 
                 <label><b>Mot de passe</b></label>

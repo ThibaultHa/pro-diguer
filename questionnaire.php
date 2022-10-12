@@ -16,7 +16,7 @@ include 'traitement/userbdd.php';
 	<?php include 'includes/nav.php';?>
 	
 	<section>
-		<article>
+		<article class="page-content">
 			<form method="GET" id="questionnaire_form"></form>
 			<fieldset>
 				<legend>Choisi 3 émotions représentant ta semaine :</legend>

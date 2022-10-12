@@ -9,11 +9,9 @@ include 'traitement/userbdd.php';
   <title>Synthèse</title>
   <link rel="icon" type="image/png" href="img/logo.png" />
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<p>Synthèse</p>
-	</header>
 	<!-- Menu -->
 	<?php include 'includes/nav.php';?>
 	<section>

@@ -14,10 +14,6 @@ include 'traitement/userbdd.php';
 <body>
 	<!-- Menu -->
 	<?php include 'includes/nav.php';?>
-
-	<header>
-		<p>Mon profil</p>
-	</header>
     
 	
 	<section>

@@ -5,6 +5,13 @@
         <link rel="stylesheet" href="styleLogin.css" media="screen" type="text/css" />
     </head>
     <body>
+    <?php
+    include 'includes/BDDConnexion.php';
+    if(isset($_SESSION['iduser'])){
+        header("Location: ./index.php",true);
+        die();
+    }
+    ?>
         <div id="container">
             <!-- zone de connexion -->
             
@@ -12,30 +19,30 @@
                 <h1>Connexion</h1>
                 
                 <label><b> Nom </b></label>
-                <input type="text" placeholder="Votre NOM " name="username" required>
+                <input type="text" placeholder="Email" name="username" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="votre MDP" name="password" required>
+                <input type="password" placeholder="MDP" name="password" required>
 
-                <input type="submit" id='submit' value='Valider' >
+                <input type="submit" name="submit" id='submit' value='Valider' >
                 <?php
-                include 'includes/BDDConnexion.php';
                 if(isset($_GET['erreur'])){
                     $err = $_GET['erreur'];
                     if($err==1 || $err==2)
                         echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }
                 if(isset($_POST['submit'])){
-                    $sql = 'SELECT password FROM profil WHERE mail = '.$_POST['username'];
-                    $mdp = $db->query($sql);
+                    $bdd = $db->prepare('SELECT password FROM profil WHERE mail = :mail');
+                    $mdp = $bdd->execute(['mail' => $_POST['username']]);
                     if(isset($mdp) && (crypt($_POST['password'],'$6$rounds=5000$usesomesillystringforsalt$') == $mdp)) {
-                        $sql =  $sql = 'SELECT iduser FROM profil WHERE mail = '.$_POST['username'];
-                        $_SESSION['iduser'] =  $db->query($sql);
-                        header("Location: ./index.php");
+                        $bdd = $db->prepare('SELECT password FROM profil WHERE mail = :mail');
+                        $_SESSION['iduser'] =  $bdd->execute(['mail' => $_POST['username']]);
+                        header("Location: ./index.php",true);
                         die();
                     }
                     else echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                }
+
+                }else echo 'submit non set'
                 ?>
             </form>
         </div>

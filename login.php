@@ -34,17 +34,19 @@
                 if(isset($_POST['submit'])){
                     $bdd = $db->prepare('SELECT password FROM profil WHERE mail = :mail');
                     $bdd->execute(['mail' => $_POST['username']]);
-                    $mdp = $bdd->fetch()[0];
-                    $cryptpass = crypt($_POST['password'],'$6$rounds=5000$usesomesillystringforsalt$');
-                    if(isset($mdp) && (strcmp($cryptpass,$mdp) == 0)) {
-                        $bdd = $db->prepare('SELECT iduser FROM profil WHERE mail = :mail');
+                    if($bdd->fetch()){
                         $bdd->execute(['mail' => $_POST['username']]);
-                        $_SESSION['iduser'] =  $bdd->fetch()[0];
-                        header("Location: ./index.php",true);
-                        die();
-                    }
-                    else echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-
+                        $mdp = $bdd->fetch()[0];
+                        $cryptpass = crypt($_POST['password'],'$6$rounds=5000$usesomesillystringforsalt$');
+                        if(isset($mdp) && (strcmp($cryptpass,$mdp) == 0)) {
+                            $bdd = $db->prepare('SELECT iduser FROM profil WHERE mail = :mail');
+                            $bdd->execute(['mail' => $_POST['username']]);
+                            $_SESSION['iduser'] =  $bdd->fetch()[0];
+                            header("Location: ./index.php",true);
+                            die();
+                        }
+                        else echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                    }else echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }
                 ?>
             </form>

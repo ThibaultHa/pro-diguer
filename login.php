@@ -28,9 +28,11 @@
                 if(isset($_POST['submit'])){
                     $sql = 'SELECT password FROM profil WHERE mail = '.$_POST['username'];
                     $mdp = $db->query($sql);
-                    if(isset($mdp) && (crypt($_POST['password'],CRYPT_SHA512) == $mdp)) {
+                    if(isset($mdp) && (crypt($_POST['password'],'$6$rounds=5000$usesomesillystringforsalt$') == $mdp)) {
                         $sql =  $sql = 'SELECT iduser FROM profil WHERE mail = '.$_POST['username'];
                         $_SESSION['iduser'] =  $db->query($sql);
+                        header("Location: ./index.php");
+                        die();
                     }
                     else echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }

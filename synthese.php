@@ -24,12 +24,24 @@ include 'traitement/userbdd.php';
 						<th>Tendence</th>
 					</tr>
 				</thead>
+				<?php
+				// Récpération des données utilisateurs nécessaires pour afficher le tableau
+				$bdd = $db->prepare('SELECT * FROM profil');
+				$bdd->execute();
+				$userResults = $bdd->fetchAll();
+				
+				?>
 				<tbody>
-					<tr>
-						<td>Calvin D</td>
-						<td>CONTENT</td> <!-- Affiche 4 semaines utilisateur -->
-						<td>...</td> <!-- Affiche un état smile -->
-					</tr>
+				<?php
+					foreach ($userResults as $userResult) 
+					{
+						echo '<tr>';
+							echo '<td>' . $userResult['prenom'] . ' ' . $userResult['nom'] . '</td>';
+							echo '<td>CONTENT</td>'; 
+							echo '<td>...</td>'; 
+						echo '</tr>';
+					}
+				?>
 				</tbody>
 			</table>
 		</article>

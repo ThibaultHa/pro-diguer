@@ -4,16 +4,16 @@ session_start();
 $username = 'root';
 $password = 'root';
 $host = 'localhost';
-$db = 'ahahah';
+$base = 'pro-diguer';
 
-$_SESSION['userId'] = 1;
+$_SESSION['iduser'] = 1;
 
 //On établit la connexion
 //$conn = new mysqli($servername, $username, $password);
 try
 {
 	// On se connecte à MySQL
-	$db = new PDO('mysql:host='.$host.';dbname='.$db.';charset=utf8', $username, $password);
+	$db = new PDO('mysql:host='.$host.';dbname='.$base.';charset=utf8', $username, $password);
 }
 catch(Exception $e)
 {

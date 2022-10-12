@@ -25,7 +25,10 @@ include 'traitement/userbdd.php';
     <article>
         <form>
             <p>
-                <?php if (isset($result)) {
+                <?php
+                    $sql = "SELECT share_coach FROM user WHERE user.id = ".$_SESSION['iduser'];
+                    $db->query($sql);
+                if (isset($result)) {
                     if ($result == true) echo '<input type="checkbox" id="shareData" name="shareData" checked>';
                     else echo '<input type="checkbox" id="shareData" name="shareData">';
                     }

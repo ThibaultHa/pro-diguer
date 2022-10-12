@@ -1,13 +1,12 @@
 CREATE TABLE profil (
-	iduser int not null auto_increment,
+	iduser int PRIMARY KEY auto_increment not null,
 	prenom VARCHAR,
 	nom VARCHAR,
 	mail VARCHAR,
 	sexe BOOLEAN,
 	date_debut DATE,
 	SHARE_coach BOOLEAN,
-	passord VARCHAR,
-	PRIMARY KEY (iduser)
+	passord VARCHAR
 );
 CREATE TABLE  signalement (
 	signal_id int not null auto_increment,

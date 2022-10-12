@@ -8,7 +8,7 @@
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="index.php" method="POST"> <!-- a changer par verification.php après -->
+            <form action="login.php" method="POST"> <!-- a changer par verification.php après -->
                 <h1>Connexion</h1>
                 
                 <label><b> Nom </b></label>
@@ -19,11 +19,13 @@
 
                 <input type="submit" id='submit' value='Valider' >
                 <?php
+                include 'includes/BDDConnexion.php';
                 if(isset($_GET['erreur'])){
                     $err = $_GET['erreur'];
                     if($err==1 || $err==2)
                         echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }
+                if(isset($_POST['submit']))
                 ?>
             </form>
         </div>

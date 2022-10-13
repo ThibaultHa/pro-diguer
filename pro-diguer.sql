@@ -63,12 +63,6 @@ create table conseil (
 
 );
 
-create table conseil (
-	coseilId int PRIMARY key not null auto_increment,
-	leConseil varCHAR(200),
-	titre varCHAR(50)
-
-);
 
 INSERT INTO `conseil` (`coseilId`, `leConseil`, `titre`) VALUES
 (1, 'Veillez à une bonne qualité de sommeil ,cest tres imortant', 'Le Someil'),

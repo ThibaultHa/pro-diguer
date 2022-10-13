@@ -55,6 +55,39 @@ create table questionaire
 	FOREIGN key (emoji3) REFERENCES emoji(emoid)
 
 );
+
+create table conseil (
+	coseilId int PRIMARY key not null auto_increment,
+	leConseil varCHAR(200),
+	titre varCHAR(50)
+
+);
+
+create table conseil (
+	coseilId int PRIMARY key not null auto_increment,
+	leConseil varCHAR(200),
+	titre varCHAR(50)
+
+);
+
+INSERT INTO `conseil` (`coseilId`, `leConseil`, `titre`) VALUES
+(1, 'Veillez à une bonne qualité de sommeil ,cest tres imortant', 'Le Someil'),
+(2, 'Optez pour une activité sportive ou physique régulière', 'Sport'),
+(3, 'Gardez un équilibre alimentaire, ca fait un grand bien', 'Miam Miam'),
+(4, 'Gardez le contrôle sur vos émotions', 'Gestion emotionnelle'),
+(5, 'Cultivez votre vie personnelle', 'Deconnectez vous'),
+(6, 'Préservez le sens que vous donnez à votre travail', 'Rappelez vous'),
+(7, 'Favorisez l entraide et la collaboration au travail', 'vous n etes pas seul au travail'),
+(8, 'Organisez votre temps de travail', 'La plannification '),
+(9, 'Restez connecté à vos valeurs', 'Les valeur '),
+(10, 'vous etre magnifique , continuez sur cette voie ', 'Quel Plaisir');
+
+
+
+
+
+
+
 INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (1, 'Calvin', 'Djafari', 'c.djafari@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'coath');
 INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (2, 'Thibault', 'Hallard', 't.Hallard@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'membre');
 INSERT INTO profil (iduser, prenom, nom, mail, sexe, date_debut, SHARE_coach, password, statut) VALUES (3, 'Jules', 'Ravinet', 'j.Ravinet@epsi.fr', true, null, false, '$6$rounds=5000$usesomesillystri$5j.v6ib3.cm5DUA/FrY42w4XWlmRu/aDG5eONr/CKwrZ5/rCiCJhjmH4n/6KfsQw4LSXH8Z0MIC2NlnAfiKrK.', 'coath');

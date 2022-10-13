@@ -10,6 +10,15 @@ CREATE TABLE profil (
 	statut VARCHAR(30),
 	password VARCHAR(2000)
 );
+
+CREATE TABLE emoji 
+(
+	emoid int PRIMARY key not NULL auto_increment,
+	emoname varCHAR (20),
+	emoval int not null
+
+);
+
 CREATE TABLE  signalement
 (
 	userid int ,
@@ -23,7 +32,6 @@ CREATE TABLE  signalement
     FOREIGN key (emoji) REFERENCES emoji(emoid)
 );
 
-
 CREATE TABLE indice 
 (
 	userid int,
@@ -31,14 +39,6 @@ CREATE TABLE indice
 	signalement_id int,
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
 	FOREIGN KEY (signalement_id) REFERENCES signalement(signal_id)
-);
-
-CREATE TABLE emoji 
-(
-	emoid int PRIMARY key not NULL auto_increment,
-	emoname varCHAR (20),
-	emoval int not null
-
 );
 
 create table questionaire 

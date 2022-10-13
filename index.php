@@ -38,8 +38,5 @@ include 'traitement/userbdd.php';
 			}
 		?>
 	</section>
-	<footer>
-		
-	</footer>
 </body>
 </html>

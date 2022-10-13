@@ -85,16 +85,8 @@ include 'traitement/userbdd.php';
 								// Calcul du score
 								if(isset($emojiResults) and $userResult['SHARE_coach'])
 								{
-									$baseScore = 100;
-									$emojiScore = 0;
-									foreach ($qResults as $qResult) 
-									{
-										$emojiScore += $emojiResults[intval($qResult['emoji1'])-1]['emoval'] + $emojiResults[intval($qResult['emoji2'])-1]['emoval'] + $emojiResults[intval($qResult['emoji3'])-1]['emoval'];
-									}
-									
-									$totalScore = $baseScore + $emojiScore;
-									
-									echo $totalScore;
+									$id = $userResult['iduser']; // Requis pour l'exec de calculScore
+									include 'score/calculScore.php';
 								}
 								else
 								{

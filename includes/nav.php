@@ -1,5 +1,6 @@
 <nav class="menu-principal">
 	<div class="logo-appli">
+		<img class='logonav' src='img/logo.png'>
 		<p>Bienvenue <?php echo $_SESSION['prenom']; ?> <?php echo $_SESSION['nom']; ?></p>
 		<p><?php echo $_SESSION['statut']; ?></p>
 	</div>

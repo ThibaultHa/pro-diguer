@@ -20,7 +20,7 @@ include 'traitement/userbdd.php';
 
 ?>
 <section>
-    <article class="page-content">
+    <article class="page-content confidentialite">
         <form method="POST" action="traitement/sendAutorisation.php">
             <p>
                 <?php
@@ -38,7 +38,7 @@ include 'traitement/userbdd.php';
 						echo '<input type="checkbox" id="shareData" name="shareData">';
                 }
                 ?>
-                <label for="shareData">J'autorise à partager mes données avec mon coach carrière</label>
+                <label for="shareData">J'autorise à partager mes données avec mon coach carrière</label><br>
 				<button type="submit"> Envoyer </button>
             </p>
         </form>

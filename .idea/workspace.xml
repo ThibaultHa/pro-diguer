@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1584d3ed-fde6-49e5-a018-c7597358ee0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synthese.php" beforeDir="false" afterPath="$PROJECT_DIR$/synthese.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +29,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Mathis/Documents/Cours/Logiciel/wamp64/www/pro-diguer/img",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mathis/Documents/Cours/Logiciel/wamp64/www/pro-diguer/img&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mathis\Documents\Cours\Logiciel\wamp64\www\pro-diguer\img" />
@@ -58,7 +57,8 @@
       <updated>1665490300449</updated>
       <workItem from="1665490302518" duration="7726000" />
       <workItem from="1665560610424" duration="3264000" />
-      <workItem from="1665646717593" duration="6362000" />
+      <workItem from="1665646717593" duration="10879000" />
+      <workItem from="1665663827142" duration="1999000" />
     </task>
     <servers />
   </component>

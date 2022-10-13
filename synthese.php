@@ -21,8 +21,8 @@ include 'traitement/userbdd.php';
             <tr>
                 <th>Prénom Nom</th>
                 <th>Suivit Hebdo</th>
-                <th>Indice de burnout</th>
                 <th>Tendence</th>
+                <th>Indice de burnout</th>
             </tr>
             </thead>
             <?php
@@ -73,20 +73,6 @@ include 'traitement/userbdd.php';
                     echo 'Information non partagé';
                 }
                 echo '</td>';
-                // IA calcul
-                echo '<td>';
-                // On récupère les smiley
-                $bdd = $db->prepare('SELECT * FROM emoji');
-                $bdd->execute();
-                $emojiResults = $bdd->fetchAll();
-                // Calcul du score
-                if (isset($emojiResults) and $userResult['SHARE_coach']) {
-                    $id = $userResult['iduser']; // Requis pour l'exec de calculScore
-                    include 'score/calculScore.php';
-                } else {
-                    // rien
-                }
-                echo '</td>';
                 echo '<td>';
                 //On récupère les signalements :
                 $bdd = $db->prepare('SELECT emoji, commentaire, date_add  FROM signalement WHERE signal_userid = :id ORDER BY signal_id DESC LIMIT 4');
@@ -108,6 +94,20 @@ include 'traitement/userbdd.php';
                     echo '</tr>';
                 }
                 echo '</table>';
+                echo '</td>';
+                // IA calcul
+                echo '<td>';
+                // On récupère les smiley
+                $bdd = $db->prepare('SELECT * FROM emoji');
+                $bdd->execute();
+                $emojiResults = $bdd->fetchAll();
+                // Calcul du score
+                if (isset($emojiResults) and $userResult['SHARE_coach']) {
+                    $id = $userResult['iduser']; // Requis pour l'exec de calculScore
+                    include 'score/calculScore.php';
+                } else {
+                    // rien
+                }
                 echo '</td>';
                 echo '</tr>';
             }

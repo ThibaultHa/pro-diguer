@@ -82,7 +82,7 @@ INSERT INTO `conseil` (`coseilId`, `leConseil`, `titre`) VALUES
 (6, 'Préservez le sens que vous donnez à votre travail', 'Rappelez vous'),
 (7, 'Favorisez l entraide et la collaboration au travail', 'vous n etes pas seul au travail'),
 (8, 'Organisez votre temps de travail', 'La plannification '),
-(9, 'Restez connecté à vos valeurs', 'Les valeur '),
+(9, 'Restez connecté à vos valeurs', 'Les valeurs '),
 (10, 'vous etre magnifique , continuez sur cette voie ', 'Quel Plaisir');
 
 
@@ -124,13 +124,19 @@ INSERT INTO emoji (emoid, emoname, emoval) VALUES (28, 'Curieux', 6);
 
 
 INSERT INTO `emojiconseil` (`conseil_Id`, `emoji_Id`) VALUES
+(1, 1),
 (1, 3),
+(1, 21),
 (2, 21),
 (3, 27),
 (4, 8),
 (5, 2),
 (6, 4),
 (7, 24),
+(7, 14),
 (8, 9),
+(8, 17),
 (9, 15),
-(10, 8);
+(9, 14),
+(10, 8),
+(10, 24);

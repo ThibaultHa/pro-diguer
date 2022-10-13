@@ -14,7 +14,7 @@
 	
 	// doublon pas performant mais bon 
 	// On récupère les 4 derniers formulaires complété par l'utilisateur
-	$bdd = $db->prepare('SELECT emoji1, emoji2, emoji3 FROM questionaire WHERE userid = :userid ORDER BY questionnaire_id DESC LIMIT 4');
+	$bdd = $db->prepare('SELECT emoji1, emoji2, emoji3 FROM questionaire WHERE userid = :userid ORDER BY questionnaire_id DESC LIMIT 2');
 	$bdd->execute(['userid' => $_SESSION['iduser']]);
 	$qResults = $bdd->fetchAll();
 	

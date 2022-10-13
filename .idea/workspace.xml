@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1584d3ed-fde6-49e5-a018-c7597358ee0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro-diguer.sql" beforeDir="false" afterPath="$PROJECT_DIR$/pro-diguer.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signalement.php" beforeDir="false" afterPath="$PROJECT_DIR$/signalement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitement/signalementForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitement/signalementForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.PNG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -31,12 +35,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Mathis/Documents/Cours/Logiciel/wamp64/www/pro-diguer",
+    "last_opened_file_path": "C:/Users/Mathis/Documents/Cours/Logiciel/wamp64/www/pro-diguer/img",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mathis\Documents\Cours\Logiciel\wamp64\www\pro-diguer\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mathis\Documents\Cours\Logiciel\wamp64\www\pro-diguer\includes" />
     </key>
@@ -51,7 +58,7 @@
       <updated>1665490300449</updated>
       <workItem from="1665490302518" duration="7726000" />
       <workItem from="1665560610424" duration="3264000" />
-      <workItem from="1665646717593" duration="4432000" />
+      <workItem from="1665646717593" duration="6362000" />
     </task>
     <servers />
   </component>

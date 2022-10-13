@@ -2,7 +2,7 @@ body{
     background-color:white;
 }
 .menu-principal{
-    background-color:black;
+    background:linear-gradient(to right, #FF7D28, white);;
     padding:10px;
     display:flex;
     width:100%;
@@ -110,4 +110,37 @@ fieldset table td input{
     margin-left:auto;
     margin-right: auto;
     text-align: center;
+}
+.signalement h3{
+    color:#FF7D28;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+.signalement form input{
+    padding:10px;
+    margin-left:20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.signalement form textarea{
+    border-radius: 20px;
+}
+.inputsubmit{
+    margin-top:30px;
+    padding:15px 30px !important;
+    border:1px solid #FF7D28;
+    color:#FF7D28;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:white;
+}
+.inputsubmit:hover{
+    border:1px solid black;
+    color:black;
+    background-color:#FF7D28;
+}
+.signalement form td:hover{
+    cursor: pointer;
+    background-color: black;
 }

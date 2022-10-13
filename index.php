@@ -27,7 +27,7 @@ include 'traitement/userbdd.php';
 		<!-- 2 situations : l'utilisateur doit compléter son formulaire ou n'a rien à faire -->
 		<!-- Doit compléter son formulaire -->
 		<?php
-			$check = false;
+			$check = true;
 			if($check) // Doit compléter son formulaire
 			{
 				include 'includes/verrouProfil.php';
@@ -38,8 +38,5 @@ include 'traitement/userbdd.php';
 			}
 		?>
 	</section>
-	<footer>
-		
-	</footer>
 </body>
 </html>

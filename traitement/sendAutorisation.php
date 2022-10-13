@@ -17,7 +17,7 @@ $stmt= $db->prepare($miseAjour)->execute($data);
 
 if($stmt) // Pas d'erreur
 {
-	header("Location: ../index.php",true);
+	header("Location: ../confidentialite.php",true);
 	die();
 }
 

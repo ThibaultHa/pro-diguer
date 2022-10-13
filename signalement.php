@@ -15,7 +15,7 @@ include 'traitement/userbdd.php';
 <!-- Menu -->
 <?php include 'includes/nav.php'; ?>
 <section>
-    <article class="page-content">
+    <article class="page-content signalement">
         <h3>Information sur la personne que vous souhaitez signaler </h3>
         <form action="traitement/signalementForm.php" method="POST">
             <p>
@@ -28,7 +28,7 @@ include 'traitement/userbdd.php';
             </p>
             <br/>
             <p>
-            <h3>Votre ressentie sur cette personne :</h3>
+            <h3>Votre ressenti sur cette personne :</h3>
             <table>
                 <tbody>
                 <tr>
@@ -53,7 +53,7 @@ include 'traitement/userbdd.php';
             </p>
             <h2>Commentaire</h2>
             <textarea name="comment" rows="12" cols="35" required></textarea><br>
-            <input type="submit" name="submit" id='submit' value='Valider'>
+            <input type="submit" name="submit" id='submit' value='Valider' class="inputsubmit">
         </form>
     </article>
 </section>

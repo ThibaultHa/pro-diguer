@@ -63,6 +63,27 @@ create table conseil (
 
 );
 
+create table emojiConseil(
+
+			conseil_Id int,
+			emoji_Id int ,
+			FOREIGN KEY (conseil_Id) REFERENCES conseil(coseilId),
+			FOREIGN KEY (emoji_Id) REFERENCES conseil(emoid)
+
+);
+
+INSERT INTO `emojiconseil` (`conseil_Id`, `emoji_Id`) VALUES
+(1, 3),
+(2, 21),
+(3, 27),
+(4, 8),
+(5, 2),
+(6, 4),
+(7, 24),
+(8, 9),
+(9, 15),
+(10, 8);
+
 
 INSERT INTO `conseil` (`coseilId`, `leConseil`, `titre`) VALUES
 (1, 'Veillez à une bonne qualité de sommeil ,cest tres imortant', 'Le Someil'),

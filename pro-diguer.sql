@@ -64,25 +64,13 @@ create table conseil (
 );
 
 create table emojiConseil(
-
-			conseil_Id int,
-			emoji_Id int ,
-			FOREIGN KEY (conseil_Id) REFERENCES conseil(coseilId),
-			FOREIGN KEY (emoji_Id) REFERENCES conseil(emoid)
-
+	conseil_Id int,
+	emoji_Id int,
+	FOREIGN KEY (conseil_Id) REFERENCES conseil(coseilId),
+	FOREIGN KEY (emoji_Id) REFERENCES emoji(emoid)
 );
 
-INSERT INTO `emojiconseil` (`conseil_Id`, `emoji_Id`) VALUES
-(1, 3),
-(2, 21),
-(3, 27),
-(4, 8),
-(5, 2),
-(6, 4),
-(7, 24),
-(8, 9),
-(9, 15),
-(10, 8);
+
 
 
 INSERT INTO `conseil` (`coseilId`, `leConseil`, `titre`) VALUES
@@ -96,10 +84,6 @@ INSERT INTO `conseil` (`coseilId`, `leConseil`, `titre`) VALUES
 (8, 'Organisez votre temps de travail', 'La plannification '),
 (9, 'Restez connecté à vos valeurs', 'Les valeur '),
 (10, 'vous etre magnifique , continuez sur cette voie ', 'Quel Plaisir');
-
-
-
-
 
 
 
@@ -139,4 +123,14 @@ INSERT INTO emoji (emoid, emoname, emoval) VALUES (27, 'Agacé', -8);
 INSERT INTO emoji (emoid, emoname, emoval) VALUES (28, 'Curieux', 6);
 
 
-
+INSERT INTO `emojiconseil` (`conseil_Id`, `emoji_Id`) VALUES
+(1, 3),
+(2, 21),
+(3, 27),
+(4, 8),
+(5, 2),
+(6, 4),
+(7, 24),
+(8, 9),
+(9, 15),
+(10, 8);

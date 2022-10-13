@@ -20,11 +20,11 @@ include 'traitement/userbdd.php';
         <form action="traitement/signalementForm.php" method="POST">
             <p>
                 <label><b>Nom </b></label>
-                <input type="text" name="name" placeholder="Crinchon" required>
+                <input type="text" name="name" placeholder="Nom" required>
             </p>
             <p>
                 <label><b>Prénom </b></label>
-                <input type="text" name="firstname" placeholder="Mathis" required>
+                <input type="text" name="firstname" placeholder="Prénom" required>
             </p>
             <br/>
             <p>

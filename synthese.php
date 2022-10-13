@@ -15,7 +15,7 @@ include 'traitement/userbdd.php';
 <!-- Menu -->
 <?php include 'includes/nav.php'; ?>
 <section>
-    <article class="page-content page-confidentialite">
+    <article class="page-content page-confidentialite page-synthese">
         <table>
             <thead>
             <tr>

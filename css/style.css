@@ -144,3 +144,25 @@ fieldset table td input{
     cursor: pointer;
     background-color: black;
 }
+.confidentialite button{
+    padding:15px 30px;
+    border:1px solid #FF7D28;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top:30px;
+    background-color: white;
+    color:#FF7D28;
+    cursor: pointer;
+}
+.confidentialite button:hover{
+    background-color: #FF7D28;
+    color:black;
+}
+.page-synthese table td table td{
+    height:25px;
+}
+.page-synthese table td table td img{
+    height:25px;
+    width:25px;
+}

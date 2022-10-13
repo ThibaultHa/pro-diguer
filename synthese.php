@@ -21,7 +21,7 @@ include 'traitement/userbdd.php';
             <tr>
                 <th>Prénom Nom</th>
                 <th>Suivit Hebdo</th>
-                <th>Tendence</th>
+                <th>Signalement</th>
                 <th>Indice de burnout</th>
             </tr>
             </thead>

@@ -17,6 +17,7 @@ CREATE TABLE  signalement
 	signal_id int PRIMARY KEY not null auto_increment,
 	emoji int,
     commentaire VARCHAR(2000),
+    date_add DATE,
 	FOREIGN KEY (userid) REFERENCES profil(iduser),
     FOREIGN KEY (signal_userid) REFERENCES profil(iduser),
     FOREIGN key (emoji) REFERENCES emoji(emoid)

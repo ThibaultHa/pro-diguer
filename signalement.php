@@ -17,7 +17,7 @@ include 'traitement/userbdd.php';
 <section>
     <article class="page-content">
         <h3>Information sur la personne que vous souhaitez signaler </h3>
-        <form action="signalement.php" method="POST">
+        <form action="traitement/signalementForm.php" method="POST">
             <p>
                 <label><b>Nom </b></label>
                 <input type="text" name="name" placeholder="Crinchon" required>
@@ -32,30 +32,30 @@ include 'traitement/userbdd.php';
             <table>
                 <tbody>
                 <tr>
-                    <?php
-                    $i = 1;
-                    for ($colonne = 1; $colonne <= 7; $colonne++) {
-                        echo "<td>";
-                        echo "<input type='checkbox' id='emotion_" . $i . "' name='emotions[]' value='" . $i . "'> <img class='img_emotion' src='img/emotion/" . $i . ".png'>";
-                        echo "</td>";
-                        $i++;
-                    }
-                    ?>
+                    <td>
+                        <input type='radio' id='emotion_1' name='emotion' value='1'> <img class='img_emotion' src='img/emotion/1.png'>
+                    </td>
+                    <td>
+                        <input type='radio' id='emotion_2' name='emotion' value='2'> <img class='img_emotion' src='img/emotion/2.png'>
+                    </td>
+                    <td>
+                        <input type='radio' id='emotion_3' name='emotion' value='3'> <img class='img_emotion' src='img/emotion/3.png'>
+                    </td>
+                    <td>
+                        <input type='radio' id='emotion_4' name='emotion' value='4'> <img class='img_emotion' src='img/emotion/4.png'>
+                    </td>
+                    <td>
+                        <input type='radio' id='emotion_5' name='emotion' value='5'> <img class='img_emotion' src='img/emotion/5.png'>
+                    </td>
                 </tr>
                 <tbody>
             </table>
             </p>
             <h2>Commentaire</h2>
-            <textarea name="comment" rows="12" cols="35" required>Commentaire</textarea><br>
+            <textarea name="comment" rows="12" cols="35" required></textarea><br>
             <input type="submit" name="submit" id='submit' value='Valider'>
         </form>
     </article>
 </section>
 </body>
 </html>
-<?php
-if(isset($_POST['submit'])){
-
-}
-
-?>
